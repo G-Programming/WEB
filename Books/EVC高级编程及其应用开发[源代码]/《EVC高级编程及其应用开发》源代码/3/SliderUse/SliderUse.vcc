@@ -1,0 +1,44 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CSliderUseDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "SliderUse.h"
+
+ClassCount=2
+Class1=CSliderUseApp
+Class2=CSliderUseDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_SLIDERUSE_DIALOG
+
+[CLS:CSliderUseApp]
+Type=0
+HeaderFile=SliderUse.h
+ImplementationFile=SliderUse.cpp
+Filter=N
+
+[CLS:CSliderUseDlg]
+Type=0
+HeaderFile=SliderUseDlg.h
+ImplementationFile=SliderUseDlg.cpp
+Filter=D
+LastObject=CSliderUseDlg
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_SLIDERUSE_DIALOG]
+Type=1
+Class=CSliderUseDlg
+ControlCount=6
+Control1=IDC_STATIC,static,1342308352
+Control2=IDC_STATIC,static,1342308352
+Control3=IDC_STATIC,static,1342308352
+Control4=IDC_SLIDER_RED,msctls_trackbar32,1342242840
+Control5=IDC_SLIDER_BLUE,msctls_trackbar32,1342242840
+Control6=IDC_SLIDER_GREEN,msctls_trackbar32,1342242840
+

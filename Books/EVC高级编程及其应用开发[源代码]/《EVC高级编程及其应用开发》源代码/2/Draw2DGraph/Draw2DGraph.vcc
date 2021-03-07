@@ -1,0 +1,48 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CDraw2DGraphDlg
+LastTemplate=generic CWnd
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "Draw2DGraph.h"
+
+ClassCount=3
+Class1=CDraw2DGraphApp
+Class2=CDraw2DGraphDlg
+
+ResourceCount=2
+Resource1=IDR_MAINFRAME
+Class3=C2DGraph
+Resource2=IDD_DRAW2DGRAPH_DIALOG
+
+[CLS:CDraw2DGraphApp]
+Type=0
+HeaderFile=Draw2DGraph.h
+ImplementationFile=Draw2DGraph.cpp
+Filter=N
+
+[CLS:CDraw2DGraphDlg]
+Type=0
+HeaderFile=Draw2DGraphDlg.h
+ImplementationFile=Draw2DGraphDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CDraw2DGraphDlg
+
+
+[DLG:IDD_DRAW2DGRAPH_DIALOG]
+Type=1
+Class=CDraw2DGraphDlg
+ControlCount=0
+
+[CLS:C2DGraph]
+Type=0
+HeaderFile=2DGraph.h
+ImplementationFile=2DGraph.cpp
+BaseClass=CWnd
+Filter=W
+VirtualFilter=WC
+LastObject=C2DGraph
+

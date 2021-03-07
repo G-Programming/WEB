@@ -1,0 +1,41 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CThreadSynBySemaphoreDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ThreadSynBySemaphore.h"
+
+ClassCount=2
+Class1=CThreadSynBySemaphoreApp
+Class2=CThreadSynBySemaphoreDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_THREADSYNBYSEMAPHORE_DIALOG
+
+[CLS:CThreadSynBySemaphoreApp]
+Type=0
+HeaderFile=ThreadSynBySemaphore.h
+ImplementationFile=ThreadSynBySemaphore.cpp
+Filter=N
+
+[CLS:CThreadSynBySemaphoreDlg]
+Type=0
+HeaderFile=ThreadSynBySemaphoreDlg.h
+ImplementationFile=ThreadSynBySemaphoreDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CThreadSynBySemaphoreDlg
+
+
+[DLG:IDD_THREADSYNBYSEMAPHORE_DIALOG]
+Type=1
+Class=CThreadSynBySemaphoreDlg
+ControlCount=3
+Control1=IDC_LISTONE,listbox,1352728833
+Control2=IDC_LISTTWO,listbox,1352728833
+Control3=IDC_BTNEXEC,button,1342242816
+

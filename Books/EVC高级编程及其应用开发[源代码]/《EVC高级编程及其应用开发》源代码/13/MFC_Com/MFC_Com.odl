@@ -1,0 +1,15 @@
+// MFC_Com.odl : type library source for MFC_Com.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (MFC_Com.tlb).
+
+[ uuid(9C3B6F39-8112-423D-BA20-42FF9D9261DB), version(1.0) ]
+library MFC_Com
+{
+	importlib("stdole32.tlb");
+	
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

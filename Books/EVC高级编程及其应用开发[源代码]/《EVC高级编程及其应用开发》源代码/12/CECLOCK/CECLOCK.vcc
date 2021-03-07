@@ -1,0 +1,20 @@
+; CLW file contains information for the WCE MFC ClassWizard
+
+[General Info]
+Version=1
+ClassCount=1
+ResourceCount=0
+NewFileInclude1=#include "stdafx.h"
+Class1=CClockST
+LastClass=CClockST
+LastTemplate=generic CWnd
+
+[CLS:CClockST]
+Type=0
+HeaderFile=ClockST.h
+ImplementationFile=ClockST.cpp
+BaseClass=CWnd
+Filter=W
+VirtualFilter=WC
+LastObject=CClockST
+

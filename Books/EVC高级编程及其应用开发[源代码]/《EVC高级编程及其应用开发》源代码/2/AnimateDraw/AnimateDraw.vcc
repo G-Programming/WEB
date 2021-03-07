@@ -1,0 +1,45 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CAnimateDrawDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "AnimateDraw.h"
+
+ClassCount=2
+Class1=CAnimateDrawApp
+Class2=CAnimateDrawDlg
+
+ResourceCount=4
+Resource2=IDR_MAINFRAME
+Resource3=IDD_ANIMATEDRAW_DIALOG (German (Germany))
+Resource4=IDD_ANIMATEDRAW_DIALOG
+
+[CLS:CAnimateDrawApp]
+Type=0
+HeaderFile=AnimateDraw.h
+ImplementationFile=AnimateDraw.cpp
+Filter=N
+
+[CLS:CAnimateDrawDlg]
+Type=0
+HeaderFile=AnimateDrawDlg.h
+ImplementationFile=AnimateDrawDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CAnimateDrawDlg
+
+
+[DLG:IDD_ANIMATEDRAW_DIALOG]
+Type=1
+Class=CAnimateDrawDlg
+ControlCount=0
+
+[DLG:IDD_ANIMATEDRAW_DIALOG (German (Germany))]
+Type=1
+Class=?
+ControlCount=1
+Control1=IDC_STATIC,static,1342308352
+

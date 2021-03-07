@@ -1,0 +1,39 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CCopyScreenDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "CopyScreen.h"
+
+ClassCount=2
+Class1=CCopyScreenApp
+Class2=CCopyScreenDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_COPYSCREEN_DIALOG
+
+[CLS:CCopyScreenApp]
+Type=0
+HeaderFile=CopyScreen.h
+ImplementationFile=CopyScreen.cpp
+Filter=N
+
+[CLS:CCopyScreenDlg]
+Type=0
+HeaderFile=CopyScreenDlg.h
+ImplementationFile=CopyScreenDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_CUSTOM1
+
+
+[DLG:IDD_COPYSCREEN_DIALOG]
+Type=1
+Class=CCopyScreenDlg
+ControlCount=1
+Control1=IDC_BTNSNAP,button,1342242816
+

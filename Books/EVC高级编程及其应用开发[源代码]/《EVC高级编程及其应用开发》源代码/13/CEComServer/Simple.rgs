@@ -1,0 +1,26 @@
+HKCR
+{
+	CEComServer.Simple.1 = s 'Simple Class'
+	{
+		CLSID = s '{04056CF6-5A52-498E-A751-8066C206AED1}'
+	}
+	CEComServer.Simple = s 'Simple Class'
+	{
+		CLSID = s '{04056CF6-5A52-498E-A751-8066C206AED1}'
+		CurVer = s 'CEComServer.Simple.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {04056CF6-5A52-498E-A751-8066C206AED1} = s 'Simple Class'
+		{
+			ProgID = s 'CEComServer.Simple.1'
+			VersionIndependentProgID = s 'CEComServer.Simple'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			'TypeLib' = s '{E6098AB7-79F3-4B73-8EE5-DCB4CBD5DD0A}'
+		}
+	}
+}

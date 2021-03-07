@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RDAExam.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""wceres.rc""         // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RDAExam.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RDAEXAM_DIALOG DIALOG DISCARDABLE  0, 0, 159, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "RDA示例"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "执行远程SQL语句(submit)",IDC_BTNSUBMIT,24,15,110,14
+    PUSHBUTTON      "从服务器获取数据(pull)",IDC_BTNPULL,24,38,110,14
+    PUSHBUTTON      "向服务器提交数据(push)",IDC_BTNPUSH,24,62,110,14
+END
+
+IDD_DLGSUBMIT_DIALOG DIALOG DISCARDABLE  0, 0, 156, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "执行远程SQL语句"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "URL地址:",IDC_STATIC,5,12,32,8
+    LTEXT           "用户名:",IDC_STATIC,5,30,27,8
+    LTEXT           "密  码:",IDC_STATIC,5,47,28,8
+    EDITTEXT        IDC_EDTINTERNETURL,40,10,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERNETUSERNAME,40,27,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTINTERNETPASSWORD,40,45,109,14,ES_AUTOHSCROLL
+    GROUPBOX        "Internet属性",IDC_STATIC,0,2,155,59
+    EDITTEXT        IDC_EDTCONNECTSTR,5,70,142,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTQUERYSTR,5,115,142,33,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "连接串",IDC_STATIC,0,61,153,41
+    GROUPBOX        "查询串",IDC_STATIC,1,104,152,48
+    PUSHBUTTON      "确定",IDC_BTNOK,18,155,50,14
+    PUSHBUTTON      "取消",IDC_BTNCANCEL,86,155,50,14
+END
+
+IDD_DLGPULL_DIALOG DIALOG DISCARDABLE  0, 0, 161, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "从服务器器获取数据(pull)"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "URL地址:",IDC_STATIC,5,11,32,8
+    LTEXT           "用户名:",IDC_STATIC,5,26,30,8
+    LTEXT           "密  码:",IDC_STATIC,5,40,28,8
+    EDITTEXT        IDC_EDTINTERNETURL,40,9,114,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERNETUSERNAME,40,24,114,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTINTERNETPASSWORD,40,39,114,13,ES_AUTOHSCROLL
+    GROUPBOX        "Internet属性",IDC_STATIC,0,2,159,52
+    LTEXT           "错误表名:",IDC_STATIC,1,79,37,8
+    LTEXT           "连接串:",IDC_STATIC,0,95,29,8
+    LTEXT           "本地连接串:",IDC_STATIC,0,112,45,8
+    LTEXT           "本地表名:",IDC_STATIC,0,126,37,8
+    LTEXT           "查询语句:",IDC_STATIC,0,139,37,8
+    PUSHBUTTON      "确定",IDC_BTNOK,20,168,50,14
+    PUSHBUTTON      "取消",IDC_BTNCANCEL,83,168,50,14
+    EDITTEXT        IDC_EDTERRORTABLENAME,41,77,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTCONNECTSTR,41,92,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTLOCALCONNECTSTR,52,107,102,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTLOCALTABLENAME,41,123,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTQUERYSTR,41,138,113,27,ES_MULTILINE | WS_VSCROLL
+    COMBOBOX        IDC_CMBTRACKING,41,57,116,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "跟  踪:",IDC_STATIC,4,60,34,8
+END
+
+IDD_DLGPUSH_DIALOG DIALOG DISCARDABLE  0, 0, 161, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "向服务器提交数据(push)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "URL地址:",IDC_STATIC,5,12,32,9
+    LTEXT           "用户名:",IDC_STATIC,5,28,30,9
+    LTEXT           "密  码:",IDC_STATIC,5,44,28,9
+    EDITTEXT        IDC_EDTINTERNETURL,39,10,114,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERNETUSERNAME,39,26,114,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTINTERNETPASSWORD,39,43,114,15,ES_AUTOHSCROLL
+    GROUPBOX        "Internet属性",IDC_STATIC,0,2,160,59
+    LTEXT           "本地表名:",IDC_STATIC,0,134,37,9
+    EDITTEXT        IDC_EDTLOCALTABLENAME,39,131,117,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BTNOK,22,147,50,15
+    PUSHBUTTON      "取消",IDC_BTNCANCEL,86,147,50,15
+    EDITTEXT        IDC_EDTCONNECTSTR,6,70,151,25,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "连接串",IDC_STATIC,0,61,160,35
+    EDITTEXT        IDC_EDTLOCALCONNECTSTR,6,105,151,25,ES_MULTILINE | 
+                    WS_VSCROLL
+    GROUPBOX        "本地连接串",IDC_STATIC,0,97,160,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RDAEXAM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DLGSUBMIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DLGPULL_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DLGPUSH_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLGPULL_DIALOG DLGINIT
+BEGIN
+    IDC_CMBTRACKING, 0x403, 22, 0
+0x0054, 0x0052, 0x0041, 0x0043, 0x004b, 0x0049, 0x004e, 0x0047, 0x004f, 
+0x004e, 0x0000, 
+    IDC_CMBTRACKING, 0x403, 24, 0
+0x0054, 0x0052, 0x0041, 0x0043, 0x004b, 0x0049, 0x004e, 0x0047, 0x004f, 
+0x0046, 0x0046, 0x0000, 
+    IDC_CMBTRACKING, 0x403, 38, 0
+0x0054, 0x0052, 0x0041, 0x0043, 0x004b, 0x0049, 0x004e, 0x0047, 0x004f, 
+0x004e, 0x005f, 0x0049, 0x004e, 0x0044, 0x0045, 0x0058, 0x0045, 0x0053, 
+0x0000, 
+    IDC_CMBTRACKING, 0x403, 40, 0
+0x0054, 0x0052, 0x0041, 0x0043, 0x004b, 0x0049, 0x004e, 0x0047, 0x004f, 
+0x0046, 0x0046, 0x005f, 0x0049, 0x004e, 0x0044, 0x0045, 0x0058, 0x0045, 
+0x0053, 0x0000, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WCE MFC-Anwendung RDAExam\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RDAExam\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RDAExam.EXE\0"
+            VALUE "ProductName", "Anwendung RDAExam\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RDAExam.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "wceres.rc"         // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

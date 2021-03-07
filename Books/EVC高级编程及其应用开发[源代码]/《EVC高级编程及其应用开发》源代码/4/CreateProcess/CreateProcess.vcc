@@ -1,0 +1,39 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CCreateProcessDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "CreateProcess.h"
+
+ClassCount=2
+Class1=CCreateProcessApp
+Class2=CCreateProcessDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_CREATEPROCESS_DIALOG
+
+[CLS:CCreateProcessApp]
+Type=0
+HeaderFile=CreateProcess.h
+ImplementationFile=CreateProcess.cpp
+Filter=N
+
+[CLS:CCreateProcessDlg]
+Type=0
+HeaderFile=CreateProcessDlg.h
+ImplementationFile=CreateProcessDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_BTNEXEC
+
+
+[DLG:IDD_CREATEPROCESS_DIALOG]
+Type=1
+Class=CCreateProcessDlg
+ControlCount=1
+Control1=IDC_BTNEXEC,button,1342242816
+

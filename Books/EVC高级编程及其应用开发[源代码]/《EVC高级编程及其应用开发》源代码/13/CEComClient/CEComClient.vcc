@@ -1,0 +1,38 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CCEComClientDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "CEComClient.h"
+
+ClassCount=3
+Class1=CCEComClientApp
+Class2=CCEComClientDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_CECOMCLIENT_DIALOG
+
+[CLS:CCEComClientApp]
+Type=0
+HeaderFile=CEComClient.h
+ImplementationFile=CEComClient.cpp
+Filter=N
+
+[CLS:CCEComClientDlg]
+Type=0
+HeaderFile=CEComClientDlg.h
+ImplementationFile=CEComClientDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_CECOMCLIENT_DIALOG]
+Type=1
+Class=?
+ControlCount=1
+Control1=IDC_BTNCALL,button,1342242816
+

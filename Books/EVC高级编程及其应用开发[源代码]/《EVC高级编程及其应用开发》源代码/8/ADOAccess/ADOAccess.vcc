@@ -1,0 +1,43 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CADOAccessDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ADOAccess.h"
+
+ClassCount=2
+Class1=CADOAccessApp
+Class2=CADOAccessDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_ADOACCESS_DIALOG
+
+[CLS:CADOAccessApp]
+Type=0
+HeaderFile=ADOAccess.h
+ImplementationFile=ADOAccess.cpp
+Filter=N
+
+[CLS:CADOAccessDlg]
+Type=0
+HeaderFile=ADOAccessDlg.h
+ImplementationFile=ADOAccessDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CADOAccessDlg
+
+
+[DLG:IDD_ADOACCESS_DIALOG]
+Type=1
+Class=CADOAccessDlg
+ControlCount=5
+Control1=IDC_BTNCREATEDB,button,1342242816
+Control2=IDC_BTNOPENDB,button,1342242816
+Control3=IDC_CMB_SQL,combobox,1344340226
+Control4=IDC_BTNEXEC,button,1342242816
+Control5=IDC_LST_VIEW,SysListView32,1350631429
+

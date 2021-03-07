@@ -1,0 +1,30 @@
+; CLW file contains information for the WCE MFC ClassWizard
+
+[General Info]
+Version=1
+ODLFile=MFC_Com.odl
+ClassCount=2
+Class1=CMFC_ComApp
+LastClass=CMFC_ComApp
+NewFileInclude2=#include "MFC_Com.h"
+ResourceCount=0
+NewFileInclude1=#include "stdafx.h"
+Class2=CTimeLogServer
+LastTemplate=CCmdTarget
+
+[CLS:CMFC_ComApp]
+Type=0
+HeaderFile=MFC_Com.h
+ImplementationFile=MFC_Com.cpp
+Filter=N
+BaseClass=CWinApp
+VirtualFilter=AC
+LastObject=CMFC_ComApp
+
+[CLS:CTimeLogServer]
+Type=0
+HeaderFile=TimeLogServer.h
+ImplementationFile=TimeLogServer.cpp
+BaseClass=CCmdTarget
+Filter=N
+

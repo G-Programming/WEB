@@ -1,0 +1,43 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CThreadSynByMutexDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ThreadSynByMutex.h"
+
+ClassCount=2
+Class1=CThreadSynByMutexApp
+Class2=CThreadSynByMutexDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_THREADSYNBYMUTEX_DIALOG
+
+[CLS:CThreadSynByMutexApp]
+Type=0
+HeaderFile=ThreadSynByMutex.h
+ImplementationFile=ThreadSynByMutex.cpp
+Filter=N
+
+[CLS:CThreadSynByMutexDlg]
+Type=0
+HeaderFile=ThreadSynByMutexDlg.h
+ImplementationFile=ThreadSynByMutexDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CThreadSynByMutexDlg
+
+
+[DLG:IDD_THREADSYNBYMUTEX_DIALOG]
+Type=1
+Class=CThreadSynByMutexDlg
+ControlCount=5
+Control1=IDC_LISTONE,listbox,1352728833
+Control2=IDC_LISTTWO,listbox,1352728833
+Control3=IDC_BTNEXEC,button,1342242816
+Control4=IDC_STATIC,button,1342177287
+Control5=IDC_STATIC,button,1342177287
+

@@ -1,0 +1,56 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CIPC_MapFileDlg
+LastTemplate=generic CWnd
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "IPC_MapFile.h"
+
+ClassCount=3
+Class1=CIPC_MapFileApp
+Class2=CIPC_MapFileDlg
+
+ResourceCount=2
+Resource1=IDR_MAINFRAME
+Class3=CMemFileMap
+Resource2=IDD_IPC_MAPFILE_DIALOG
+
+[CLS:CIPC_MapFileApp]
+Type=0
+HeaderFile=IPC_MapFile.h
+ImplementationFile=IPC_MapFile.cpp
+Filter=N
+
+[CLS:CIPC_MapFileDlg]
+Type=0
+HeaderFile=IPC_MapFileDlg.h
+ImplementationFile=IPC_MapFileDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_CKSYN
+
+
+[DLG:IDD_IPC_MAPFILE_DIALOG]
+Type=1
+Class=CIPC_MapFileDlg
+ControlCount=8
+Control1=IDC_BTNOPEN,button,1342242816
+Control2=IDC_BTNCLOSE,button,1342242816
+Control3=IDC_BTNREAD,button,1342242816
+Control4=IDC_BTNWRITE,button,1342242816
+Control5=IDC_EDTDATA,edit,1350631552
+Control6=IDC_CKOPEN,button,1476460547
+Control7=IDC_CKEXIST,button,1476460547
+Control8=IDC_CKSYN,button,1342242819
+
+[CLS:CMemFileMap]
+Type=0
+HeaderFile=MemFileMap.h
+ImplementationFile=MemFileMap.cpp
+BaseClass=CWnd
+Filter=W
+VirtualFilter=WC
+LastObject=CMemFileMap
+

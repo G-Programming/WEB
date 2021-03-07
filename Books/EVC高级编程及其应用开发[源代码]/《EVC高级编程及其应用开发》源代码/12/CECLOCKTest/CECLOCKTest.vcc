@@ -1,0 +1,35 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CCECLOCKTestDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "CECLOCKTest.h"
+
+ClassCount=3
+Class1=CCECLOCKTestApp
+Class2=CCECLOCKTestDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_CECLOCKTEST_DIALOG
+
+[CLS:CCECLOCKTestApp]
+Type=0
+HeaderFile=CECLOCKTest.h
+ImplementationFile=CECLOCKTest.cpp
+Filter=N
+
+[CLS:CCECLOCKTestDlg]
+Type=0
+HeaderFile=CECLOCKTestDlg.h
+ImplementationFile=CECLOCKTestDlg.cpp
+Filter=D
+
+
+[DLG:IDD_CECLOCKTEST_DIALOG]
+Type=1
+Class=CCECLOCKTestDlg
+ControlCount=0
+

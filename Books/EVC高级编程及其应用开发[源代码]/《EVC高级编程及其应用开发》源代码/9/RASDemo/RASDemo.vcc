@@ -1,0 +1,40 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CRASDemoDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "RASDemo.h"
+
+ClassCount=2
+Class1=CRASDemoApp
+Class2=CRASDemoDlg
+
+ResourceCount=2
+Resource1=IDR_MAINFRAME
+Resource2=IDD_RASDEMO_DIALOG
+
+[CLS:CRASDemoApp]
+Type=0
+HeaderFile=RASDemo.h
+ImplementationFile=RASDemo.cpp
+Filter=N
+
+[CLS:CRASDemoDlg]
+Type=0
+HeaderFile=RASDemoDlg.h
+ImplementationFile=RASDemoDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_BTNDIAL
+
+
+[DLG:IDD_RASDEMO_DIALOG]
+Type=1
+Class=?
+ControlCount=2
+Control1=IDC_BTNDIAL,button,1342242816
+Control2=IDC_BTNHANGUP,button,1342242816
+

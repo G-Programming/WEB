@@ -1,0 +1,7 @@
+; PlugIn_one.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PLUGIN_ONE"
+;DESCRIPTION  'PLUGIN_ONE Windows CE Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,57 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CFileExamDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "FileExam.h"
+
+ClassCount=2
+Class1=CFileExamApp
+Class2=CFileExamDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_FILEEXAM_DIALOG
+
+[CLS:CFileExamApp]
+Type=0
+HeaderFile=FileExam.h
+ImplementationFile=FileExam.cpp
+Filter=N
+
+[CLS:CFileExamDlg]
+Type=0
+HeaderFile=FileExamDlg.h
+ImplementationFile=FileExamDlg.cpp
+Filter=D
+LastObject=IDC_EDTXSBH
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_FILEEXAM_DIALOG]
+Type=1
+Class=CFileExamDlg
+ControlCount=19
+Control1=IDC_STATIC,static,1342308352
+Control2=IDC_STATIC,static,1342308352
+Control3=IDC_STATIC,static,1342308352
+Control4=IDC_STATIC,static,1342308352
+Control5=IDC_STATIC,static,1342308352
+Control6=IDC_EDTXSBH,edit,1350631552
+Control7=IDC_EDTXSXM,edit,1350631552
+Control8=IDC_EDTCSRQ,edit,1350631552
+Control9=IDC_EDTBJMC,edit,1350631552
+Control10=IDC_CMBXSXB,combobox,1344340227
+Control11=IDC_BTNFIRST,button,1342242816
+Control12=IDC_BTNPRIOR,button,1342242816
+Control13=IDC_BTNNEXT,button,1342242816
+Control14=IDC_BTNLAST,button,1342242816
+Control15=IDC_BTNADD,button,1342242816
+Control16=IDC_BTNEDIT,button,1342242816
+Control17=IDC_BTNCANCEL,button,1342242816
+Control18=IDC_BTNSAVE,button,1342242816
+Control19=IDC_BTNDELETE,button,1342242816
+

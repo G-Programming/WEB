@@ -1,0 +1,39 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CSpeciallyEffectDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "speciallyEffect.h"
+
+ClassCount=2
+Class1=CSpeciallyEffectApp
+Class2=CSpeciallyEffectDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_SPECIALLYEFFECT_DIALOG
+
+[CLS:CSpeciallyEffectApp]
+Type=0
+HeaderFile=speciallyEffect.h
+ImplementationFile=speciallyEffect.cpp
+Filter=N
+
+[CLS:CSpeciallyEffectDlg]
+Type=0
+HeaderFile=speciallyEffectDlg.h
+ImplementationFile=speciallyEffectDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_LIST
+
+
+[DLG:IDD_SPECIALLYEFFECT_DIALOG]
+Type=1
+Class=CSpeciallyEffectDlg
+ControlCount=1
+Control1=IDC_LIST,listbox,1352728833
+

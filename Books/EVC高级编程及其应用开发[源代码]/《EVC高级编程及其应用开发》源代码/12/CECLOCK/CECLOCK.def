@@ -1,0 +1,7 @@
+; CECLOCK.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CECLOCK"
+;DESCRIPTION  'CECLOCK Windows CE Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

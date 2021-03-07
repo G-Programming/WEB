@@ -1,0 +1,15 @@
+// CECLOCK.odl : type library source for CECLOCK.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (CECLOCK.tlb).
+
+[ uuid(BD57D34F-AAA3-444D-8432-23B23B15AAB9), version(1.0) ]
+library CECLOCK
+{
+	importlib("stdole32.tlb");
+	
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

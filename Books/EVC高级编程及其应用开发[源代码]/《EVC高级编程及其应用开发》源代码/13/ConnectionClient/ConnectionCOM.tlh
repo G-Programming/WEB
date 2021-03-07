@@ -1,0 +1,72 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (b8751e54).
+//
+// ConnectionCOM.tlh
+//
+// C++ source equivalent of Win32 type library ConnectionCOM.tlb
+// compiler-generated file created 03/08/04 at 14:20:51 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace CONNECTIONCOMLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ad194b41-3095-4bee-a61f-eed7ed92f135"))
+/* dispinterface */ _IAddEvents;
+struct /* coclass */ Add;
+struct __declspec(uuid("249b00a6-83dd-41f2-94fa-5a7c780d4b64"))
+/* dual interface */ IAdd;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IAddEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IAdd, __uuidof(IAdd));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("ad194b41-3095-4bee-a61f-eed7ed92f135"))
+_IAddEvents : IDispatch
+{};
+
+struct __declspec(uuid("ae304c85-4378-4095-b4c4-17ddddd92b75"))
+Add;
+    // [ default ] interface IAdd
+    // [ default, source ] dispinterface _IAddEvents
+
+struct __declspec(uuid("249b00a6-83dd-41f2-94fa-5a7c780d4b64"))
+IAdd : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Add (
+        int a,
+        int b ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CONNECTIONCOMLib =
+    {0x0efb2dd9,0x0b76,0x4076,{0xab,0x83,0xc4,0xa0,0x5c,0x52,0x78,0x8a}};
+extern "C" const GUID __declspec(selectany) DIID__IAddEvents =
+    {0xad194b41,0x3095,0x4bee,{0xa6,0x1f,0xee,0xd7,0xed,0x92,0xf1,0x35}};
+extern "C" const GUID __declspec(selectany) CLSID_Add =
+    {0xae304c85,0x4378,0x4095,{0xb4,0xc4,0x17,0xdd,0xdd,0xd9,0x2b,0x75}};
+extern "C" const GUID __declspec(selectany) IID_IAdd =
+    {0x249b00a6,0x83dd,0x41f2,{0x94,0xfa,0x5a,0x7c,0x78,0x0d,0x4b,0x64}};
+
+} // namespace CONNECTIONCOMLib
+
+#pragma pack(pop)

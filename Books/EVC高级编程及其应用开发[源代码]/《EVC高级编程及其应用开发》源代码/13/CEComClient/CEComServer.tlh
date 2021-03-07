@@ -1,0 +1,57 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (2253e5f3).
+//
+// CEComServer.tlh
+//
+// C++ source equivalent of Win32 type library E:\\工作项目\\EVC编程入门及项目开发\\例子程序\\10\\CEComServer\\X86Dbg\\CEComServer.dll
+// compiler-generated file created 03/10/04 at 21:12:26 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ Simple;
+struct __declspec(uuid("a35a0be3-e599-40cf-8123-5d6b08dad843"))
+/* dual interface */ ISimple;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISimple, __uuidof(ISimple));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("04056cf6-5a52-498e-a751-8066c206aed1"))
+Simple;
+    // [ default ] interface ISimple
+
+struct __declspec(uuid("a35a0be3-e599-40cf-8123-5d6b08dad843"))
+ISimple : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ShowSvrMsg ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_ShowSvrMsg ( ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "CEComServer.tli"
+
+#pragma pack(pop)

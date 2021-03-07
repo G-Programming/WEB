@@ -1,0 +1,43 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CThreadSynByCriticalSectionsDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ThreadSynByCriticalSections.h"
+
+ClassCount=2
+Class1=CThreadSynByCriticalSectionsApp
+Class2=CThreadSynByCriticalSectionsDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_THREADSYNBYCRITICALSECTIONS_DIALOG
+
+[CLS:CThreadSynByCriticalSectionsApp]
+Type=0
+HeaderFile=ThreadSynByCriticalSections.h
+ImplementationFile=ThreadSynByCriticalSections.cpp
+Filter=N
+
+[CLS:CThreadSynByCriticalSectionsDlg]
+Type=0
+HeaderFile=ThreadSynByCriticalSectionsDlg.h
+ImplementationFile=ThreadSynByCriticalSectionsDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CThreadSynByCriticalSectionsDlg
+
+
+[DLG:IDD_THREADSYNBYCRITICALSECTIONS_DIALOG]
+Type=1
+Class=?
+ControlCount=5
+Control1=IDC_LISTONE,listbox,1352728833
+Control2=IDC_LISTTWO,listbox,1352728833
+Control3=IDC_BTNEXEC,button,1342242816
+Control4=IDC_STATIC,button,1342177287
+Control5=IDC_STATIC,button,1342177287
+

@@ -1,0 +1,49 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CScrollBmpUseDlg
+LastTemplate=generic CWnd
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ScrollBmpUse.h"
+
+ClassCount=3
+Class1=CScrollBmpUseApp
+Class2=CScrollBmpUseDlg
+
+ResourceCount=2
+Resource1=IDR_MAINFRAME
+Class3=CScrollBmp
+Resource2=IDD_SCROLLBMPUSE_DIALOG
+
+[CLS:CScrollBmpUseApp]
+Type=0
+HeaderFile=ScrollBmpUse.h
+ImplementationFile=ScrollBmpUse.cpp
+Filter=N
+
+[CLS:CScrollBmpUseDlg]
+Type=0
+HeaderFile=ScrollBmpUseDlg.h
+ImplementationFile=ScrollBmpUseDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CScrollBmpUseDlg
+
+
+[DLG:IDD_SCROLLBMPUSE_DIALOG]
+Type=1
+Class=CScrollBmpUseDlg
+ControlCount=1
+Control1=IDC_SCROLLBMP,static,1342308352
+
+[CLS:CScrollBmp]
+Type=0
+HeaderFile=ScrollBmp.h
+ImplementationFile=ScrollBmp.cpp
+BaseClass=CWnd
+Filter=W
+VirtualFilter=WC
+LastObject=CScrollBmp
+

@@ -1,0 +1,42 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CTaskListDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "TaskList.h"
+
+ClassCount=2
+Class1=CTaskListApp
+Class2=CTaskListDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_TASKLIST_DIALOG
+
+[CLS:CTaskListApp]
+Type=0
+HeaderFile=TaskList.h
+ImplementationFile=TaskList.cpp
+Filter=N
+
+[CLS:CTaskListDlg]
+Type=0
+HeaderFile=TaskListDlg.h
+ImplementationFile=TaskListDlg.cpp
+Filter=D
+LastObject=CTaskListDlg
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_TASKLIST_DIALOG]
+Type=1
+Class=?
+ControlCount=4
+Control1=IDC_LISTPROCESS,SysListView32,1350631429
+Control2=IDC_BTNACTIVE,button,1342242816
+Control3=IDC_BTNTERMINATE,button,1342242816
+Control4=IDC_BTNREFRESH,button,1342242816
+

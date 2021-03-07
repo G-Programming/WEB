@@ -1,0 +1,40 @@
+// CEComServer.idl : IDL source for CEComServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CEComServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(A35A0BE3-E599-40CF-8123-5D6B08DAD843),
+		dual,
+		helpstring("ISimple Interface"),
+		pointer_default(unique)
+	]
+	interface ISimple : IDispatch
+	{
+		[id(1), helpstring("method ShowSvrMsg")] HRESULT ShowSvrMsg();
+		[id(2), helpstring("method _com_issue_errorex")] HRESULT _com_issue_errorex(HRESULT _hr1, IUnknown  *pthis1,const GUID  refiid1);
+	};
+
+[
+	uuid(E6098AB7-79F3-4B73-8EE5-DCB4CBD5DD0A),
+	version(1.0),
+	helpstring("CEComServer 1.0 Type Library")
+]
+library CECOMSERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(04056CF6-5A52-498E-A751-8066C206AED1),
+		helpstring("Simple Class")
+	]
+	coclass Simple
+	{
+		[default] interface ISimple;
+	};
+};

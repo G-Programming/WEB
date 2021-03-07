@@ -1,0 +1,47 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CSpinUseDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "SpinUse.h"
+
+ClassCount=2
+Class1=CSpinUseApp
+Class2=CSpinUseDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_SPINUSE_DIALOG
+
+[CLS:CSpinUseApp]
+Type=0
+HeaderFile=SpinUse.h
+ImplementationFile=SpinUse.cpp
+Filter=N
+
+[CLS:CSpinUseDlg]
+Type=0
+HeaderFile=SpinUseDlg.h
+ImplementationFile=SpinUseDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_EDT_RED
+
+
+[DLG:IDD_SPINUSE_DIALOG]
+Type=1
+Class=CSpinUseDlg
+ControlCount=9
+Control1=IDC_STATIC,static,1342308352
+Control2=IDC_STATIC,static,1342308352
+Control3=IDC_STATIC,static,1342308352
+Control4=IDC_EDT_RED,edit,1350631552
+Control5=IDC_EDT_GREEN,edit,1350631552
+Control6=IDC_EDT_BLUE,edit,1350631552
+Control7=IDC_SPIN_RED,msctls_updown32,1342177314
+Control8=IDC_SPIN_GREEN,msctls_updown32,1342177314
+Control9=IDC_SPIN_BLUE,msctls_updown32,1342177314
+

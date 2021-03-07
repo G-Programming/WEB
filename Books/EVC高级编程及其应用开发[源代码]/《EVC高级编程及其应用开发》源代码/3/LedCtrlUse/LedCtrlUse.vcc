@@ -1,0 +1,49 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CLedCtrl
+LastTemplate=CStatic
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "LedCtrlUse.h"
+
+ClassCount=3
+Class1=CLedCtrlUseApp
+Class2=CLedCtrlUseDlg
+
+ResourceCount=2
+Resource1=IDR_MAINFRAME
+Class3=CLedCtrl
+Resource2=IDD_LEDCTRLUSE_DIALOG
+
+[CLS:CLedCtrlUseApp]
+Type=0
+HeaderFile=LedCtrlUse.h
+ImplementationFile=LedCtrlUse.cpp
+Filter=N
+
+[CLS:CLedCtrlUseDlg]
+Type=0
+HeaderFile=LedCtrlUseDlg.h
+ImplementationFile=LedCtrlUseDlg.cpp
+Filter=D
+LastObject=CLedCtrlUseDlg
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_LEDCTRLUSE_DIALOG]
+Type=1
+Class=CLedCtrlUseDlg
+ControlCount=1
+Control1=IDC_LED,static,1342308352
+
+[CLS:CLedCtrl]
+Type=0
+HeaderFile=LedCtrl.h
+ImplementationFile=LedCtrl.cpp
+BaseClass=CStatic
+Filter=W
+VirtualFilter=WC
+LastObject=CLedCtrl
+

@@ -1,0 +1,71 @@
+// MyCEActiveX.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (MyCEActiveX.tlb) that will become a resource in
+// MyCEActiveX.ocx.
+
+#include <olectl.h>
+
+[ uuid(56513C9A-69FF-4F72-81C6-A081B10EBFFE), version(1.0),
+  helpfile("helpfile.htm"),
+  helpstring("MyCEActiveX ActiveX Control module"),
+  control ]
+library MYCEACTIVEXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CMyCEActiveXCtrl
+
+	[ uuid(09B93FF7-2E64-4143-9C69-18EECC23E5DF),
+	  helpstring("Dispatch interface for MyCEActiveX Control"), hidden ]
+	dispinterface _DMyCEActiveX
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CMyCEActiveXCtrl)
+			[id(1)] BSTR MsgContext;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CMyCEActiveXCtrl)
+			[id(2)] void ShowMessage();
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CMyCEActiveXCtrl
+
+	[ uuid(6CBFEABE-53BE-41AD-9CA7-D5E52BC8B6C4),
+	  helpstring("Event interface for MyCEActiveX Control") ]
+	dispinterface _DMyCEActiveXEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CMyCEActiveXCtrl)
+			[id(1)] void OnMsgChange();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CMyCEActiveXCtrl
+
+	[ uuid(6842371A-9B5A-4B9B-B3B4-750839898BCB),
+	  helpstring("MyCEActiveX Control"), control ]
+	coclass MyCEActiveX
+	{
+		[default] dispinterface _DMyCEActiveX;
+		[default, source] dispinterface _DMyCEActiveXEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

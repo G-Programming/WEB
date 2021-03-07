@@ -1,0 +1,42 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CResDllTestDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "ResDllTest.h"
+
+ClassCount=3
+Class1=CResDllTestApp
+Class2=CResDllTestDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_RESDLLTEST_DIALOG
+
+[CLS:CResDllTestApp]
+Type=0
+HeaderFile=ResDllTest.h
+ImplementationFile=ResDllTest.cpp
+Filter=N
+
+[CLS:CResDllTestDlg]
+Type=0
+HeaderFile=ResDllTestDlg.h
+ImplementationFile=ResDllTestDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+
+
+[DLG:IDD_RESDLLTEST_DIALOG]
+Type=1
+Class=CResDllTestDlg
+ControlCount=5
+Control1=IDC_BTNLOAD,button,1342242816
+Control2=IDC_BTNFREE,button,1342242816
+Control3=IDC_BTNBMP,button,1342242816
+Control4=IDC_BTNICON,button,1342242816
+Control5=IDC_BTNCUR,button,1342242816
+

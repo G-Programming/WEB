@@ -1,0 +1,40 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CMyCEActiveX_TestDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "MyCEActiveX_Test.h"
+
+ClassCount=2
+Class1=CMyCEActiveX_TestApp
+Class2=CMyCEActiveX_TestDlg
+
+ResourceCount=3
+Resource2=IDR_MAINFRAME
+Resource3=IDD_MYCEACTIVEX_TEST_DIALOG
+
+[CLS:CMyCEActiveX_TestApp]
+Type=0
+HeaderFile=MyCEActiveX_Test.h
+ImplementationFile=MyCEActiveX_Test.cpp
+Filter=N
+
+[CLS:CMyCEActiveX_TestDlg]
+Type=0
+HeaderFile=MyCEActiveX_TestDlg.h
+ImplementationFile=MyCEActiveX_TestDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=IDC_MYCEACTIVEXCTRL1
+
+
+[DLG:IDD_MYCEACTIVEX_TEST_DIALOG]
+Type=1
+Class=CMyCEActiveX_TestDlg
+ControlCount=2
+Control1=IDC_MYCEACTIVEXCTRL1,{6842371A-9B5A-4B9B-B3B4-750839898BCB},1342242816
+Control2=IDC_BUTTON1,button,1342242816
+
